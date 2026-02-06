@@ -1,0 +1,198 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36" version="29.3.4">
+  <diagram name="Страница — 1" id="qneBKzb8UlspQtA0cEnX">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Telegram бот-энциклопедия по шифрам" vertex="1">
+          <mxGeometry height="60" width="320" x="240" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-2" parent="1" style="swimlane;startSize=0;fontStyle=1;align=center;strokeColor=#666666;" value="1. Инициализация" vertex="1">
+          <mxGeometry height="180" width="760" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-3" parent="T6ON20OhIyRYtAU5WpAs-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Запуск main()" vertex="1">
+          <mxGeometry height="40" width="120" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-4" parent="T6ON20OhIyRYtAU5WpAs-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Инициализация Bot и Dispatcher" vertex="1">
+          <mxGeometry height="40" width="180" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-5" parent="T6ON20OhIyRYtAU5WpAs-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Загрузка CIPHERS_DATA" vertex="1">
+          <mxGeometry height="40" width="160" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-6" parent="T6ON20OhIyRYtAU5WpAs-2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Настройка логирования" vertex="1">
+          <mxGeometry height="40" width="140" x="620" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-7" edge="1" parent="T6ON20OhIyRYtAU5WpAs-2" source="T6ON20OhIyRYtAU5WpAs-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-8" edge="1" parent="T6ON20OhIyRYtAU5WpAs-2" source="T6ON20OhIyRYtAU5WpAs-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-9" edge="1" parent="T6ON20OhIyRYtAU5WpAs-2" source="T6ON20OhIyRYtAU5WpAs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-10" parent="1" style="swimlane;startSize=0;fontStyle=1;align=center;strokeColor=#666666;" value="2. Регистрация обработчиков" vertex="1">
+          <mxGeometry height="200" width="760" x="40" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-11" parent="T6ON20OhIyRYtAU5WpAs-10" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;strokeColor=none;fillColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="Регистрация командных обработчиков:" vertex="1">
+          <mxGeometry height="30" width="200" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-12" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="/start → cmd_start()" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-13" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="/help → cmd_help()" vertex="1">
+          <mxGeometry height="40" width="140" x="200" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-14" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="/ciphers → cmd_ciphers()" vertex="1">
+          <mxGeometry height="40" width="140" x="360" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-15" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="/about → cmd_about()" vertex="1">
+          <mxGeometry height="40" width="140" x="520" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-16" parent="T6ON20OhIyRYtAU5WpAs-10" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;strokeColor=none;fillColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="Регистрация callback обработчиков:" vertex="1">
+          <mxGeometry height="30" width="240" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-17" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Выбор шифра → handle_cipher_callback()" vertex="1">
+          <mxGeometry height="40" width="220" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-18" parent="T6ON20OhIyRYtAU5WpAs-10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Примеры → handle_example_callback()" vertex="1">
+          <mxGeometry height="40" width="220" x="280" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-19" parent="1" style="swimlane;startSize=0;fontStyle=1;align=center;strokeColor=#666666;" value="3. Запуск и работа" vertex="1">
+          <mxGeometry height="280" width="760" x="40" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-20" parent="T6ON20OhIyRYtAU5WpAs-19" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="dp.start_polling()" vertex="1">
+          <mxGeometry height="60" width="100" x="330" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-21" parent="T6ON20OhIyRYtAU5WpAs-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Получение сообщения от пользователя" vertex="1">
+          <mxGeometry height="40" width="200" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-22" parent="T6ON20OhIyRYtAU5WpAs-19" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Команда?" vertex="1">
+          <mxGeometry height="60" width="80" x="280" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-23" parent="T6ON20OhIyRYtAU5WpAs-19" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Callback?" vertex="1">
+          <mxGeometry height="60" width="80" x="400" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-24" parent="T6ON20OhIyRYtAU5WpAs-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Выполнить обработчик команды" vertex="1">
+          <mxGeometry height="40" width="160" x="140" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-25" parent="T6ON20OhIyRYtAU5WpAs-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Выполнить обработчик callback" vertex="1">
+          <mxGeometry height="40" width="180" x="340" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-26" parent="T6ON20OhIyRYtAU5WpAs-19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Показать клавиатуру с шифрами" vertex="1">
+          <mxGeometry height="40" width="160" x="560" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-27" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-28" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-29" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" target="T6ON20OhIyRYtAU5WpAs-24" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-30" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" target="T6ON20OhIyRYtAU5WpAs-23" value="Нет">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-31" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=#ffffff;" target="T6ON20OhIyRYtAU5WpAs-25" value="Да">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-32" edge="1" parent="T6ON20OhIyRYtAU5WpAs-19" source="T6ON20OhIyRYtAU5WpAs-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-26" value="Обработка завершена">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-33" parent="1" style="swimlane;startSize=0;fontStyle=1;align=center;strokeColor=#666666;" value="4. Логика обработки callback-запросов" vertex="1">
+          <mxGeometry height="340" width="760" x="40" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-34" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Получен callback" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-35" parent="T6ON20OhIyRYtAU5WpAs-33" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Анализ callback_data" vertex="1">
+          <mxGeometry height="60" width="120" x="220" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-36" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&#39;caesar&#39;, &#39;vigenere&#39;, etc" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-37" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&#39;all&#39;" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-38" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&#39;encrypt_*&#39;" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-39" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&#39;decrypt_*&#39;" vertex="1">
+          <mxGeometry height="40" width="140" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-40" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#daedf7;strokeColor=#6c9bdc;" value="show_cipher_info()" vertex="1">
+          <mxGeometry height="40" width="160" x="220" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-41" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#daedf7;strokeColor=#6c9bdc;" value="show_all_ciphers()" vertex="1">
+          <mxGeometry height="40" width="160" x="220" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-42" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#daedf7;strokeColor=#6c9bdc;" value="show_encryption_example()" vertex="1">
+          <mxGeometry height="40" width="180" x="220" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-43" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#daedf7;strokeColor=#6c9bdc;" value="show_decryption_example()" vertex="1">
+          <mxGeometry height="40" width="180" x="220" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-44" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Получение данных из CIPHERS_DATA" vertex="1">
+          <mxGeometry height="40" width="180" x="440" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-45" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Формирование текста ответа" vertex="1">
+          <mxGeometry height="40" width="180" x="440" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-46" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Создание инлайн-клавиатуры" vertex="1">
+          <mxGeometry height="40" width="180" x="440" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-47" parent="T6ON20OhIyRYtAU5WpAs-33" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Отправка ответа пользователю" vertex="1">
+          <mxGeometry height="40" width="180" x="440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-48" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-49" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="70" />
+              <mxPoint x="180" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-50" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-51" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-52" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-53" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-54" edge="1" parent="T6ON20OhIyRYtAU5WpAs-33" source="T6ON20OhIyRYtAU5WpAs-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="T6ON20OhIyRYtAU5WpAs-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-55" parent="1" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;strokeColor=none;fillColor=none;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="Легенда:" vertex="1">
+          <mxGeometry height="30" width="100" x="40" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Процесс/Действие" vertex="1">
+          <mxGeometry height="30" width="120" x="40" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-57" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Решение/Проверка" vertex="1">
+          <mxGeometry height="30" width="100" x="180" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Данные/Конфигурация" vertex="1">
+          <mxGeometry height="30" width="120" x="300" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Ввод/Вывод" vertex="1">
+          <mxGeometry height="30" width="100" x="440" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#daedf7;strokeColor=#6c9bdc;" value="Функция обработки" vertex="1">
+          <mxGeometry height="30" width="120" x="560" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="T6ON20OhIyRYtAU5WpAs-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Callback обработка" vertex="1">
+          <mxGeometry height="30" width="120" x="700" y="1240" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
